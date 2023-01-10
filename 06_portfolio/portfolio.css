@@ -1,0 +1,219 @@
+/********************* BODY *******************************/
+
+main {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-block: 3rem;
+}
+
+.indhold-centreret {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.tema {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 5rem;
+  background-color: rgb(234, 234, 234);
+  border-radius: 1.5rem;
+}
+
+.tema-ugrid {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 2rem;
+  display: grid;
+}
+
+#tema2link {
+  font-family: unibody-8-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#tema3link {
+  font-family: unibody-8-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#tema4link {
+  font-family: unibody-8-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#tema5link {
+  font-family: unibody-8-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#tema6link {
+  font-family: unibody-8-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.port-img {
+  margin-top: 2rem;
+}
+
+/***************BANNER******************/
+.ommig-banner {
+  margin-left: 17.15rem;
+  margin-right: 10rem;
+}
+
+.ommig-banner h3 {
+  padding-left: 25rem;
+  padding-right: 25rem;
+  font-size: 30px;
+}
+
+.ommig-banner p {
+  font-size: 20px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  font-family: unibody-8-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: aliceblue;
+  padding-left: 3.5rem;
+  padding-right: 0.5rem;
+}
+
+.h1banner {
+  font-size: 50px;
+  font-family: unibody-8-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: aliceblue;
+  padding-left: 2rem;
+}
+
+/********** KNAPPER PORTFOLIO ************/
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.button-30 {
+  margin-top: 1rem;
+  margin-left: 4.15rem;
+}
+
+/*************MEDIAQUARY*****************/
+
+@media (min-width: 601px) {
+  #greentextmobil {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    max-width: 410px;
+  }
+
+  .ommig-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #greentext {
+    display: none;
+  }
+
+  .planet1-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .ommig-banner {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .ommig-banner p {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    font-size: 15px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    align-items: center;
+  }
+
+  #greentext {
+    font-size: 8px;
+  }
+
+  .h1banner {
+    font-size: 30px;
+    padding-left: 0rem;
+  }
+
+  .tema {
+    margin: 0rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding-inline: 2rem;
+  }
+}

@@ -1,0 +1,96 @@
+/* Global styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.baggrund-index {
+  background-image: url(new-img/stjernehimmel.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* == Body styles == */ /****
+body {
+  font-family: omnium-wide, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.6;
+  background-color: whitesmoke;
+}
+*************/
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background-image: url(new-img/stjernehimmelbred.svg);
+}
+
+nav {
+  font-family: omnium-wide, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.logo {
+  max-width: 75px;
+}
+
+/* Header / Banner styles */
+.banner {
+  padding: 2rem;
+}
+
+/* Main styles */
+
+section {
+  display: grid;
+  gap: 1rem;
+}
+
+article {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 601px) {
+  article {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+}

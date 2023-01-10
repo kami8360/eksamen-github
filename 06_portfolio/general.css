@@ -1,0 +1,95 @@
+/********************* HEADER *******************************/
+
+.banner {
+  background: #121b3d;
+  padding: 2rem;
+  font-size: 1.5rem;
+
+  /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 40px;
+}
+
+.banner li {
+  padding-right: 2rem;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+
+  /* 2. Få elementerne til at stå ved siden af hinanden */
+  display: flex;
+  gap: 1rem;
+}
+
+/* burgermenu */
+.toggle-btn {
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none;
+  color: aliceblue;
+  font-family: omnium-wide, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+footer {
+  background-color: #121b3d;
+  font-family: unibody-8-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: green;
+  padding-left: 2.5rem;
+}
+
+.greentext {
+  color: green;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    display: block;
+  }
+
+  .main-menu.shown {
+    display: contents;
+  }
+
+  .main-menu ul {
+    display: none;
+  }
+
+  .main-menu.shown ul {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: column;
+    flex-basis: 100%;
+  }
+
+  footer {
+    background-color: #121b3d;
+    font-family: unibody-8-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: green;
+    padding-left: 1rem;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
+/*****************************************************/
